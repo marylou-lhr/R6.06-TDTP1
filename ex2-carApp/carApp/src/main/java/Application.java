@@ -1,4 +1,8 @@
 public class Application {
+    /**
+     * Main de l'application.
+     * @param args
+     */
     public static void main(final String[] args) {
         final int ageConducteur = 20;
         final int vitesseVoitureApresAcceleration = 80;
