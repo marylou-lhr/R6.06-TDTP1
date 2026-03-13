@@ -3,7 +3,7 @@ public class Voiture {
     private String couleur;
     private int vitesse;
 
-    public Voiture(String model, String color) {
+    public Voiture(final String model, final String color) {
         this.modele = model;
         this.couleur = color;
         this.vitesse = 0;
@@ -15,8 +15,9 @@ public class Voiture {
 
     public void accelerer() {
         final int incr = 10;
-        final int vitesse_max = 120;
-        if (vitesse + incr <= vitesse_max) {
+        final int vitesseMax = 120;
+
+        if (vitesse + incr <= vitesseMax) {
             vitesse += incr;
             // afficher détails
             System.out.println("Modèle : " + modele);

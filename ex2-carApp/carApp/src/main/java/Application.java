@@ -1,18 +1,17 @@
 public class Application {
-    public static void main(String[] args) {
-        final int age_conducteur = 20;
-        final int vitesse_voiture1 = 80;
-        final int vitesse_voiture2 = 80;
-        final int age_conducteur = 20;
+    public static void main(final String[] args) {
+        final int ageConducteur = 20;
+        final int vitesseVoitureApresAcceleration = 80;
+        final int vitesseVoitureApresRalentissement = 30;
 
         Voiture maVoiture = new Voiture("Sedan", "Bleu");
-        Conducteur moi = new Conducteur("John", age_conducteur);
+        Conducteur moi = new Conducteur("John", ageConducteur);
 
         moi.demarrerVoiture(maVoiture);
         maVoiture.accelerer();
-        moi.changerVitesse(maVoiture, vitesse_voiture1);
+        moi.changerVitesse(maVoiture, vitesseVoitureApresAcceleration);
         maVoiture.ralentir();
-        moi.changerVitesse(maVoiture, vitesse_voiture2);
+        moi.changerVitesse(maVoiture, vitesseVoitureApresRalentissement);
         moi.arreterVoiture(maVoiture);
         System.out.println("fini");
     }
