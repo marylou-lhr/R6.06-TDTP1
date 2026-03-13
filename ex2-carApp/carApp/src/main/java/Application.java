@@ -7,7 +7,7 @@ public class Application {
         maVoiture.accelerer();
         moi.changerVitesse(maVoiture, 80);
         maVoiture.ralentir();
-        moi.changerVitesse(maVoiture,30);
+        moi.changerVitesse(maVoiture, 30);
         moi.arreterVoiture(maVoiture);
         System.out.println("fini");
     }
