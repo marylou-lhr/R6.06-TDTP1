@@ -15,7 +15,8 @@ public class Voiture {
 
     public void accelerer() {
         final int incr = 10;
-        if (vitesse + incr <= 120) {
+        final int vitesse_max = 120;
+        if (vitesse + incr <= vitesse_max) {
             vitesse += incr;
             // afficher détails
             System.out.println("Modèle : " + modele);
@@ -28,6 +29,7 @@ public class Voiture {
 
     public void ralentir() {
         final int incr = 10;
+
         if (vitesse - incr >= 0) {
             vitesse -= incr;
             // afficher détails
